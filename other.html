@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adit.F-XI RPL1 LKPD3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #003329;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 30px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+      }
+
+      .logo {
+        font-size: 2em;
+        color: #359381;
+        pointer-events: none;
+        margin-right: 270px;
+      }
+
+      .navigation a {
+        text-decoration: none;
+        color: #359381;
+        padding: 6px 15px;
+        border-radius: 20px;
+        margin: 0 10px;
+        font-weight: 600;
+      }
+
+      .navigation a:hover,
+      .navigation a.active {
+        background: #359381;
+        color: #fff;
+      }
+
+      .content {
+        margin-top: 80px;
+      }
+
+      .projects {
+        padding: 100px 20px;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 20px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .projects h2 {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 30px;
+        color: #359381;
+        position: relative;
+      }
+
+      .projects h2::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 50px;
+        height: 5px;
+        transform: translateX(-50%);
+        box-shadow: 0 0 15px rgba(230, 126, 34, 0.5);
+      }
+
+      .project-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+      }
+
+      .project-card {
+        background: #333;
+        border-radius: 15px;
+        overflow: hidden;
+        max-width: 300px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .project-card img {
+        width: 100%;
+        height: auto;
+      }
+
+      .project-card-content {
+        padding: 20px;
+      }
+
+      .project-card-content h3 {
+        margin: 0 0 10px;
+        font-size: 1.5rem;
+        color: #359381;
+      }
+
+      .project-card-content p {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+      }
+
+      .footer {
+        width: 100%;
+        height: 50px;
+        padding-left: 10px;
+        line-height: 50px;
+        background: grey;
+        color: #fff;
+        position: absolute;
+        bottom: 0px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">Adeet</h1>
+      <nav class="navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="other.html">Gallery</a>
+      </nav>
+    </header>
+
+    <div class="content">
+      <section class="projects">
+        <h2>Gallery</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <img
+              src="WhatsApp Image 2024-02-22 at 12.42.14 AM.jpeg"
+              alt="Other 1"
+            />
+            <div class="project-card-content">
+              <h3>Gallery One</h3>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="WhatsApp Image 2024-02-22 at 12.42.17 AM.jpeg"
+              alt="Other 2"
+            />
+            <div class="project-card-content">
+              <h3>Gallery Two</h3>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="WhatsApp Image 2024-02-22 at 12.42.18 AM.jpeg"
+              alt="Other3"
+            />
+            <div class="project-card-content">
+              <h3>Gallery Three</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="footer">
+      <footer>
+        <p>Copyright &copy; Adeet</p>
+      </footer>
+    </section>
+  </body>
+</html>
